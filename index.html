@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./main.css">
+		<style>
+			body{
+				color: #a3a8b6;
+				background-color: #ecf3f4;
+			}
+			#login{
+				background-color: #4f93de;
+			}
+			#login:focus, #login:hover{
+				background-color: #4f93de;
+				outline: none;
+			}
+			#signup{
+				color: #4f93de;
+			}
+		</style>
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container mt-5">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-xl-8">
+						<h1 class="text-center fs-1 fw-bolder">Welcome!</h1>
+						<p class="small text-center">Kindly login into your account below to continue enjoying our services.</p>
+					</div>
+				</div>
+				<div class="row justify-content-center mt-4">
+					<div class="col-lg-8 col-xl-8">
+						<form action="" method="get">
+							<label for="email" class="fw-bold">Email address:</label>
+							<input type="text" name="email" id="email" placeholder="Enter your email address" class="form-control mt-2 py-3" required>
+							<label for="pass" class="fw-bold mt-4">Password:</label>
+							<input type="password" name="pass" id="pass" placeholder="Enter your password" class="form-control mt-2 py-3" pattern=".{8}" title="password must contain 8 characters" required>
+							<div class="hstack mt-2">
+									<input type="checkbox" name="savelogin" id="savelogin" class="me-2">
+									<label for="savelogin">Remember Me?</label>
+							</div>
+							<button class="form-control btn text-light mt-3 py-3" id="login">LOGIN</button>
+						</form>
+						<a href="./signup.html" class="mt-2"><input type="button" name="signup" id="signup" value="SIGN UP" class="btn form-control py-3"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

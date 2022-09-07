@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./main.css">
+		<style>
+			body{
+				color: #a3a8b6;
+				background-color: #ecf3f4;
+			}
+			#signup{
+				background-color: #4f93de;
+			}
+			#signup:focus, #signup:hover{
+				background-color: #4f93de;
+				outline: none;
+			}
+			#login{
+				color: #4f93de;
+			}
+		</style>
+		<title>Create your Account</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container mt-4">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-xl-8">
+						<h1 class="text-center fs-1 fw-bolder">Create your Account!</h1>
+						<p class="small text-center">Create your account below to enjoy our services and be part of the family</p>
+					</div>
+				</div>
+				<div class="row justify-content-center mt-4">
+					<div class="col-lg-8 col-xl-8">
+						<form action="" method="post">
+							<div class="hstack">
+									<div>
+										<label for="fName" class="fw-bold">First Name:</label>
+										<input type="text" name="fName" id="fName" placeholder="Enter your first name" class="form-control mt-2 py-3" required>
+								</div>
+								<div>
+										<label for="lName" class="fw-bold">Last Name:</label>
+									<input type="text" name="lName" id="lName" placeholder="Enter your last name" class="form-control mt-2 py-3" required>
+								</div>
+							</div>
+							<label for="email" class="fw-bold mt-3">Email address:</label>
+							<input type="text" name="email" id="email" placeholder="Enter your email address" class="form-control mt-2 py-3" required>
+							<label for="pass" class="fw-bold mt-4">Password:</label>
+							<input type="password" name="pass" id="pass" placeholder="Enter your password" class="form-control mt-2 py-3"  pattern=".{8}" title="password must contain 8 characters"  required>
+							<button class="form-control btn text-light mt-3 py-3" id="signup">SIGN UP</button>
+						</form>
+						<a href="./login.html" class="mt-2"><input type="button" name="Login" id="login" value="LOGIN" class="btn form-control py-3"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
